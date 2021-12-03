@@ -1,0 +1,41 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(2,0,36,1) 100%);
+	position: relative;
+	color: #212121;
+}
+
+.wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.info.mt-3 > div:first-child, .info-block.mt-3 {
+	border-top-style: solid;
+}
+
+.info-block > div {
+	border: 2px solid black;
+	border-top-style: hidden;
+	text-align: center;
+	font-size: 1em;
+	background-color: lightblue;
+}
+
+.info-block > div:nth-child(even) {
+	background-color: #FFF;
+	padding: 5%;
+	font-size: 2em;
+}
